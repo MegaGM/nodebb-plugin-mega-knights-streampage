@@ -1,0 +1,87 @@
+.broadcast-meta {
+	position: relative;
+	height  : 60px;
+	margin  : 30px 0 20px;
+}
+
+.profile-link {
+	position: absolute;
+	z-index : 2;
+}
+
+.profile-photo {
+	display : block;
+	position: relative;
+	width   : 60px;
+	height  : 60px;
+	z-index : 4;
+}
+
+.broadcast-meta img {
+	width : 60px;
+	height: 60px;
+}
+
+.broadcast-meta .info {
+	padding-left: 75px;
+	position    : absolute;
+	top         : 0;
+	bottom      : 0;
+	left        : 0;
+	right       : 0;
+}
+
+.broadcast-meta .info .title {
+	font-size  : 26px;
+	color      : #222;
+	line-height: 35px;
+	position   : relative;
+	z-index    : 3;
+	display    : inline-block;
+	max-width  : 100%;
+}
+
+.broadcast-meta .info .title .real {
+	display      : block;
+	text-overflow: ellipsis;
+	overflow     : hidden;
+	white-space  : nowrap;
+}
+
+.broadcast-meta .info .title .over {
+	position   : absolute;
+	background : #fff;
+	top        : -5px;
+	left       : -10px;
+	right      : -10px;
+	padding    : 5px 10px 2px;
+	white-space: normal;
+	display    : none;
+	z-index    : 2;
+	opacity    : 0;
+}
+
+.meta .title {
+	text-overflow: ellipsis;
+	overflow     : hidden;
+	white-space  : nowrap;
+}
+
+.stream-placeholder {
+	vertical-align: middle;
+
+	&&.stream-img {
+		width : 100%;
+		height: auto;
+	}
+}
+
+#channel .player-column #broadcast-meta .info .channel {
+	position   : absolute;
+	bottom     : 0;
+	left       : 75px;
+	right      : 0;
+	font-size  : 16px;
+	line-height: 25px;
+	color      : #666;
+}

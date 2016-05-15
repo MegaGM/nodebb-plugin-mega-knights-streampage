@@ -1,0 +1,17 @@
+{
+	"id": "nodebb-plugin-mega-knights-streampage",
+	"name": "Stream page for Knights",
+	"library": "./library.js",
+	"scripts": [
+		"client/js/client.js"
+	],
+	"less": ["client/less/styles.less"],
+	"templates": "templates",
+	"staticDirs": {
+		"js": "client/js"
+	},
+	"hooks": [{
+		"hook": "static:app.load",
+		"method": "init"
+	}]
+}
