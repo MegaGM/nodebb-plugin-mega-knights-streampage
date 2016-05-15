@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-mega-knights-streampage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "nbbpm": {
     "compatibility": "^1.0.0"
   },
@@ -15,14 +15,16 @@
   },
   "keywords": [
     "stream",
-		"twitch"
+    "twitch"
   ],
   "author": "",
-	"contributors": [{
+  "contributors": [
+    {
       "name": "Aza Noriega",
       "email": "Aza.Noriega@gmail.com",
       "url": "https://github.com/MegaGM"
-    }],
+    }
+  ],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/MegaGM/nodebb-plugin-mega-knights-streampage/issues"
