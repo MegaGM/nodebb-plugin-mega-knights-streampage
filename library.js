@@ -1,12 +1,12 @@
 (function () {
 	"use strict";
-	var nbbHelpers = require.main.require('./src/controllers/helpers');
-	var data = {
-		name: 'It works',
-		breadcrumbs: nbbHelpers.buildBreadcrumbs([{
-			text: 'Streams'
-		}])
-	};
+	var nbbHelpers = require.main.require('./src/controllers/helpers'),
+		data = {
+			name: 'It works',
+			breadcrumbs: nbbHelpers.buildBreadcrumbs([{
+				text: 'Streams'
+			}])
+		};
 
 	var render = {
 		admin: function (req, res, next) {
