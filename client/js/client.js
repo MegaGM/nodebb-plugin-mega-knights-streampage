@@ -24,7 +24,7 @@ $(document).on('ready', function (e) {
 						next();
 					},
 					error: function () {
-						console.log('Error within ajax request to Twitch api for channel: ', channel);
+						console.error('Error within ajax request to Twitch api for channel: ', channel);
 						next();
 					}
 				});

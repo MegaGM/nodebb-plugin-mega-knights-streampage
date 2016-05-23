@@ -1,1 +1,1 @@
-# nodebb-plugin-mega-knights-streampage
+## This plugin is NOT production ready
