@@ -12,7 +12,7 @@ $(document).on('ready', function (e) {
 			if (lastUpdateTime && (now - lastUpdateTime) < 60 * 1000 && !onStreamPage) return;
 			lastUpdateTime = now;
 
-			console.log('onStreamPage: ', onStreamPage);
+			// console.log('onStreamPage: ', onStreamPage);
 			channels.online = [];
 
 			async.each(channels.names, function (channel, next) {
@@ -38,7 +38,7 @@ $(document).on('ready', function (e) {
 		}
 
 		function updateBadge() {
-			console.log('updateBadge, channels.online.length ', channels.online.length);
+			// console.log('updateBadge, channels.online.length ', channels.online.length);
 			if (channels.online.length) {
 				$('#streams-button > i').addClass('unread-count').attr('data-content', channels.online.length);
 			} else {
@@ -62,7 +62,7 @@ $(document).on('ready', function (e) {
 				// var streamHtml = '<iframe src="http://player.twitch.tv/?channel="' + channel.stream.channel.name + ' height="720" width="1280" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>';
 
 			}, function (err) {
-				console.log('finished');
+				// console.log('finished');
 
 			});
 		}
